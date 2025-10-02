@@ -17,8 +17,6 @@ export class TaskListComponent{
     this.tasks = this.taskService.getTasks();
   }
 
-  toggleTask(index: number){
-    this.taskService.toggleTask(index);
-  }
 }
+
 
