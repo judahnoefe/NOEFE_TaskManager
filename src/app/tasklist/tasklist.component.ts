@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { TaskService, Task } from '../services/taskservice.service';
 
 @Component({
-  selector: 'app-task-list',
+  selector: 'app-tasklist',
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './tasklist.component.html',
@@ -21,3 +21,4 @@ export class TaskListComponent{
     this.taskService.toggleTask(index);
   }
 }
+
