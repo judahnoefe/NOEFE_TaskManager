@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { TaskService } from '../services/taskservice.service';
 
 @Component({
-  selector: 'app-task-form',
+  selector: 'app-taskform',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './task-form.component.html',
-  styleUrls: ['./task-form.component.css']
+  templateUrl: './taskform.component.html',
+  styleUrls: ['./taskform.component.css']
 })
 export class TaskFormComponent{
   taskTitle: string = '';
@@ -22,3 +22,4 @@ export class TaskFormComponent{
     }
   }
 }
+
