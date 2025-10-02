@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-export interface Task{
+export interface Task {
   title: string;
   completed: boolean;
 }
@@ -8,23 +8,22 @@ export interface Task{
 @Injectable({
   providedIn: 'root'
 })
-export class TaskService{
+export class TaskService {
   private tasks: Task[] = [];
 
-  getTasks(): Task[]{
+  getTasks(): Task[] {
     return this.tasks;
   }
 
-  addTask(title: string){
+  addTask(title: string) {
     this.tasks.push({ title, completed: false });
   }
-  
-  getTotalTasks(): number{
+
+  getTotalTasks(): number {
     return this.tasks.length;
   }
 
-  getCompletedTasks(): number{
+  getCompletedTasks(): number {
     return this.tasks.filter(t => t.completed).length;
   }
 }
-
