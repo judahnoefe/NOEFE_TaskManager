@@ -1,0 +1,36 @@
+.taskform{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.taskform input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.taskform input:focus{
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+.taskform button{
+  padding: 10px 20px;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.taskform button:hover{
+  background: #2980b9;
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Task Manager</h1>
+
+  <app-task-form></app-task-form>
+
+  <div class="summary" *ngIf="taskService.getTotalTasks() > 0">
+    <p>Total Tasks: {{ taskService.getTotalTasks() }}</p>
+    <p>Completed Tasks: {{ taskService.getCompletedTasks() }}</p>
+  </div>
+
+  <app-task-list></app-task-list>
+</div>

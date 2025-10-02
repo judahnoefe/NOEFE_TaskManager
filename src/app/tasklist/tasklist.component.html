@@ -1,0 +1,7 @@
+<div class="tasklist">
+  <div *ngFor="let task of taskService.getTasks(); let i = index" class="taskitem">
+  <input type="checkbox" [(ngModel)]="task.completed" (change)="toggleTask(i)" />
+  <span [class.completed]="task.completed">{{ task.title }}</span>
+</div>
+
+</div>

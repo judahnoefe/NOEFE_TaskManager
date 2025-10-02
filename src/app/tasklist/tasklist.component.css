@@ -1,0 +1,26 @@
+.tasklist{
+  text-align: left;
+}
+
+.taskitem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.taskitem input[type="checkbox"]{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.taskitem span{
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.taskitem span.completed{
+  text-decoration: line-through;
+  color: #888;
+}
